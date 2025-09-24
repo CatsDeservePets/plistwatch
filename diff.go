@@ -55,7 +55,7 @@ func Diff(d1 map[string]interface{}, d2 map[string]interface{}) error {
 						value = "'" + *s + "'"
 						break
 					}
-					fmt.Printf("defaults write \"%s\" \"%s\" %s\n", key, domain, value)
+					fmt.Printf("defaults write \"%s\" \"%s\" %s\n", domain, key, value)
 				}
 			}
 		} else {
